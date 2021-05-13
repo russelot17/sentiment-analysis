@@ -1,14 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { TextAreaComponent } from './text-area/text-area.component';
+import { SentimentsComponent } from './sentiments/sentiments.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TextAreaComponent,
+    SentimentsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

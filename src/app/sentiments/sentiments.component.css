@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content:center;
+}
+
+.emoji {
+    height: 100px;
+}
+
+.sentiment {
+    margin-right: 20px;
+}
+
+h3, h4 {
+    text-align: center;
+    margin: 0;
+}
