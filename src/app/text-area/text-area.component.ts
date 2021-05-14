@@ -22,7 +22,7 @@ export class TextAreaComponent implements OnInit {
     text = text.replace(/http[s]?:\/\/(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*(),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+/g, '');
     text = text.replace(/[^A-Za-z0-9 ]/g, '');
     this.httpClient
-      .get('https://lucero-sentiment-flask.herokuapp.com/sentiment/' + text)
+      .get('https://cors-anywhere.herokuapp.com/https://lucero-sentiment-flask.herokuapp.com/sentiment/' + text)
       .subscribe((data) => {
         this.sentiments = data as JSON;
         this.sharedService.sendClickEvent(this.sentiments);
